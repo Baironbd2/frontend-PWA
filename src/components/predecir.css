@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Comme:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Comme", sans-serif;
+}
+
+.container {
+  margin-top: 150px !important;
+  box-shadow: 0 5px 15px 0 rgba(251, 248, 248, 0.4);
+  border-radius: 5%;
+  position: relative;
+}
+
+
+.imagen_logo {
+  margin-top: 1%;
+  width: 900%;
+  /* Ajusta el ancho de la imagen al contenedor */
+  max-width: 40%;
+  /* Define un ancho máximo para evitar que la imagen se estire demasiado */
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .logo {
+    flex-direction: column;
+    /* Cambia la dirección de los elementos a columna */
+  }
+
+  .imagen_logo {
+    max-width: 280px;
+    /* Reducir el ancho máximo de la imagen en pantallas más pequeñas */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button {
+    font-size: 14px;
+    /* Reducir el tamaño de fuente del botón en pantallas más pequeñas */
+  }
+}
